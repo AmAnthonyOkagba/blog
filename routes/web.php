@@ -24,3 +24,9 @@ Route::get('employee', 'EmployeeController@index');
 Route::get('add-employee', 'EmployeeController@create');
 
 Route::post('store-employee', 'EmployeeController@store');
+
+Route::get('edit-employee/{id}', 'EmployeeController@edit');
+Route::put('update-employee/{id}', 'EmployeeController@update');
+
+// Route::get('delete-employee/{id}', 'EmployeeController@delete');
+Route::delete('delete-employee/{id}', 'EmployeeController@delete');

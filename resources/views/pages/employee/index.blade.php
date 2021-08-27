@@ -40,10 +40,15 @@
                                         <td >{{$empdata->designation }} </td>
                                         <td >{{$empdata->status }} </td>
                                         <td >
-                                            <a href="" class="btn btn-primary">Edit</a>
+                                            <a href="{{ url('edit-employee/'.$empdata->id) }} " class="btn btn-primary">Edit</a>
                                         </td>
                                         <td >
-                                            <a href="" class="btn btn-danger">Delete</a>
+                                            {{-- <a href="{{ url('delete-employee/'.$empdata->id) }}" class="btn btn-danger">Delete</a> --}}
+                                            <form action="{{ url('delete-employee/'.$empdata->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
