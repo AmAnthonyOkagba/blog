@@ -10,13 +10,13 @@
                     <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url('about') }} ">About</a>
+                    <a class="nav-link" aria-current="page" href="{{ url('about') }} ">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url('employee') }}">Employee</a>
+                    <a class="nav-link" aria-current="page" href="{{ url('employee') }}">Employee</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ url('contact') }}">Contact Us</a>
+                    <a class="nav-link" aria-current="page" href="{{ url('contact') }}">Contact Us</a>
                 </li>
             </ul>
         </div>

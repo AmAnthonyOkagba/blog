@@ -1,1 +1,7 @@
-<h1>About Us</h1>
+@extends('layouts.base')
+
+@section('content')
+    <h1>Hello World</h1>
+
+
+@endsection

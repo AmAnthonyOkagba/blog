@@ -19,6 +19,8 @@ Route::get('/about', 'PageController@about');
 
 Route::get('/users/{id}', 'PageController@users');
 
-// Route::get('/about/{id}', function ($id) {
-//     return 'User is '.$id;
-// });
+Route::get('employee', 'EmployeeController@index');
+
+Route::get('add-employee', 'EmployeeController@create');
+
+Route::post('store-employee', 'EmployeeController@store');
