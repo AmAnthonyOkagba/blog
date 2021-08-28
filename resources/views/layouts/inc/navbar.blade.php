@@ -16,7 +16,7 @@
                     <a class="nav-link" aria-current="page" href="{{ url('employee') }}">Employee</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{ url('contact') }}">Contact Us</a>
+                    <a class="nav-link" aria-current="page" href="{{ url('posts') }}">Posts</a>
                 </li>
             </ul>
         </div>
