@@ -40,10 +40,10 @@
                                                 Visible
                                             @endif
                                         </td>
-                                        <td>
+                                        <td >
                                             <a href="{{ url('posts/'.$item->id.'/edit') }} " class="btn btn-primary">Edit</a>
                                         </td>
-                                        <td>
+                                        <td >
                                             {{-- <a href="{{ url('delete-employee/'.$item->id) }}" class="btn btn-danger">Delete</a> --}}
                                             <form action="{{ url('posts/'.$item->id) }}" method="POST">
                                                 @csrf

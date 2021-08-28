@@ -16,13 +16,12 @@
                     </div>
                     <div class="card-body">
 
-                        <form action="{{ url('posts/'.$post->id)}} " method="POST">
+                        <form action="{{ url('posts/'.$post->id) }} " method="POST">
                             @csrf
                             @method('PUT')
 
                             <div class="form-group mb-3">
                                 <label for="">Title</label>
-                                <input type="text" name="user_id" value="bohz" class="form-control">
                                 <input type="text" name="title" class="form-control" value="{{$post->title}} ">
                             </div>
                             <div class="form-group mb-3">
@@ -31,7 +30,7 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="">Status</label>
-                                <input type="checkbox" name="status" {!! $post->title == 1 ? 'checked':'' !!}> 0=show, 1=hide
+                                <input type="checkbox" name="status" {!! $post->status == 1 ? 'checked':'' !!}> 0=show, 1=hide
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit" class="btn btn-primary">Update</button>

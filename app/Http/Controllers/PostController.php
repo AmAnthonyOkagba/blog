@@ -81,7 +81,7 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
-        $post->user_id = $request->Auth::id();
+        $post->user_id = Auth::id();
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->status = $request->input('status') == true ? '1':'0';
