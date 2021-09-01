@@ -36,13 +36,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(['auth'])->group(function() {
+Route::middleware(['auth','isAdmin'])->group(function() {
     Route::resource('posts', 'PostController');
 });
-
-// Route::get('posts', 'PostController@index');
-
-// Route::get('posts/create', 'PostController@create');
-// Route::get('posts/{id}/edit', 'PostController@edit');
-
-// Route::put('posts/{id}', 'PostController@update');
